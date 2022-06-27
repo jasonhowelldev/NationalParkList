@@ -1,0 +1,24 @@
+<!-- index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>National Parks</title>
+  </head>
+
+  <body>
+ 
+    <h1> Quotes </h1>
+
+    <ul class="parks">
+        <% for(var i=0; i<parks.length; i++) {%>
+            <li class="park">
+                <span><%= parks[i].name %></span>
+                <span><%= parks[i].state %></span>
+
+        <% } %>
+    </ul>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
